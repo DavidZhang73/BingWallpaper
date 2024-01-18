@@ -1,10 +1,5 @@
 # BingWallpaper
 
-[![total / day](https://img.shields.io/badge/dynamic/json?url=https://data.jsdelivr.com/v1/package/gh/star2000/count@2/stats/day&label=total&query=total&suffix=+/+day&style=flat-square)](https://github.com/star2000/count)
-[![total / week](https://img.shields.io/badge/dynamic/json?url=https://data.jsdelivr.com/v1/package/gh/star2000/count@2/stats/week&label=total&query=total&suffix=+/+week&style=flat-square)](https://github.com/star2000/count)
-[![total / month](https://img.shields.io/badge/dynamic/json?url=https://data.jsdelivr.com/v1/package/gh/star2000/count@2/stats/month&label=total&query=total&suffix=+/+month&style=flat-square)](https://github.com/star2000/count)
-[![total / year](https://img.shields.io/badge/dynamic/json?url=https://data.jsdelivr.com/v1/package/gh/star2000/count@2/stats/year&label=total&query=total&suffix=+/+year&style=flat-square)](https://github.com/star2000/count)
-
 Windows 每日必应壁纸
 
 每日标准时间 0 点(北京时间 8 点)自动触发
@@ -20,13 +15,13 @@ Windows 每日必应壁纸
 ### 安装
 
 ```ps1
-powershell [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor 3072; (New-Object Net.WebClient).DownloadString('https://cdn.jsdelivr.net/gh/star2000/BingWallpaper@master/install.ps1') | iex
+powershell [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor 3072; (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/DavidZhang73/BingWallpaper/main/install.ps1') | iex
 ```
 
 ### 卸载
 
 ```ps1
-powershell [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor 3072; (New-Object Net.WebClient).DownloadString('https://cdn.jsdelivr.net/gh/star2000/BingWallpaper@master/uninstall.ps1') | iex
+powershell [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor 3072; (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/DavidZhang73/BingWallpaper/main/uninstall.ps1') | iex
 ```
 
 ## 设置
@@ -40,7 +35,7 @@ setx "环境变量名" "环境变量值"
 手动刷新执行
 
 ```bat
-schtasks /Run /TN "\star2000\BingWallpaper"
+schtasks /Run /TN "\DavidZhang\BingWallpaper"
 ```
 
 - 保存路径
@@ -50,7 +45,7 @@ schtasks /Run /TN "\star2000\BingWallpaper"
   - 注意：不以`.jpg`结尾时，文件名默认为`%Y-%m-%d.jpg`（年年年年-月月-日日.jpg），参见[UNIX 时间格式](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.utility/get-date#notes)
 - 分辨率
   - 环境变量名：`WallpaperResolution`
-  - 默认值：`1920x1080`
+  - 默认值：`UHD`
   - 可选值：
     - `UHD`（原图分辨率，一般 4k 以上）
     - `1920x1200`

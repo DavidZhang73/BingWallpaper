@@ -1,4 +1,4 @@
-schtasks /Delete /TN '\star2000\BingWallpaper' /F
+schtasks /Delete /TN '\DavidZhang\BingWallpaper' /F
 Remove-Item "$env:ALLUSERSPROFILE\BingWallpaper.vbs" -Force
 
 # set wallpaper to default
