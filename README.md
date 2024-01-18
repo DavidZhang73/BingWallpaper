@@ -10,8 +10,6 @@ Windows 每日必应壁纸
 
 ## 使用
 
-鼠标移至命令上，连点三次，`Ctrl+C`，`Win+R`，`Ctrl+V`，`Enter`
-
 ### 安装
 
 ```ps1
@@ -70,5 +68,3 @@ schtasks /Run /TN "\DavidZhang\BingWallpaper"
   - 环境变量名：`WallpaperDaysAgo`
   - 默认值：`0`（今天）
   - 可选值：`0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`
-
-## [捐赠](https://blog.star2000.work/images/alipay.png)
